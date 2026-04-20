@@ -928,54 +928,63 @@ footer { background:#040404; padding:5rem 5% 2.5rem; border-top:1px solid rgba(2
     <div class="contact-right">
 
       <!-- FORMSPREE ONLY (NO NESTING, NO JS) -->
-      <form class="contact-form" action="https://formspree.io/f/xqewqokn" method="POST">
+     <form class="contact-form" action="https://formspree.io/f/xqewqokn" method="POST">
 
-        <div class="field">
-          <label>Your Name</label>
-          <input type="text" name="name" required>
-        </div>
+  <div class="field">
+    <label>Your Name</label>
+    <input type="text" name="name" required>
+  </div>
 
-        <div class="field">
-          <label>Email Address</label>
-          <input type="email" name="email" required>
-        </div>
+  <div class="form-row">
 
-        <div class="form-row">
+    <div class="field">
+      <label>Email Address</label>
+      <input type="email" name="email" required>
+    </div>
 
-          <div class="field">
-            <label>Company / Brand</label>
-            <input type="text" name="company">
-          </div>
+    <div class="field">
+      <label>Phone Number</label>
+      <input type="tel" name="phone" required>
+    </div>
 
-          <div class="field">
-            <label>Service Needed</label>
-            <select name="service">
-              <option value="">Select a service...</option>
-              <option>Brand Strategy & Identity</option>
-              <option>Advertising Campaign</option>
-              <option>Digital Marketing</option>
-              <option>Video Production</option>
-              <option>Photography</option>
-              <option>Graphic Design</option>
-              <option>Event Management</option>
-              <option>PR & Media Relations</option>
-              <option>Full-Service Retainer</option>
-            </select>
-          </div>
+  </div>
 
-        </div>
+  <div class="form-row">
 
-        <div class="field">
-          <label>Project Brief</label>
-          <textarea name="message"></textarea>
-        </div>
+    <div class="field">
+      <label>Company / Brand</label>
+      <input type="text" name="company">
+    </div>
 
-        <div class="form-submit">
-          <button type="submit">Send Message →</button>
-          <span class="form-note">We respond within 24 hours.</span>
-        </div>
+    <div class="field">
+      <label>Service Needed</label>
+      <select name="service">
+        <option value="">Select a service...</option>
+        <option>Brand Strategy & Identity</option>
+        <option>Advertising Campaign</option>
+        <option>Digital Marketing</option>
+        <option>Video Production</option>
+        <option>Photography</option>
+        <option>Graphic Design</option>
+        <option>Event Management</option>
+        <option>PR & Media Relations</option>
+        <option>Full-Service Retainer</option>
+      </select>
+    </div>
 
-      </form>
+  </div>
+
+  <div class="field">
+    <label>Project Brief</label>
+    <textarea name="message"></textarea>
+  </div>
+
+  <div class="form-submit">
+    <button type="submit">Send Message →</button>
+    <span class="form-note">We respond within 24 hours.</span>
+  </div>
+
+</form>
 
     </div>
 
