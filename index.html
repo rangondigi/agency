@@ -878,38 +878,76 @@ footer { background:#040404; padding:5rem 5% 2.5rem; border-top:1px solid rgba(2
 <section id="contact">
   <div class="reveal">
     <span class="s-label">Get In Touch</span>
-    <h2 style="font-family:var(--font-display);font-size:clamp(3rem,5vw,5.5rem);letter-spacing:.03em;text-transform:uppercase;margin-bottom:0">LET'S WORK<br>TOGETHER</h2>
+    <h2 style="font-family:var(--font-display);font-size:clamp(3rem,5vw,5.5rem);letter-spacing:.03em;text-transform:uppercase;margin-bottom:0">
+      LET'S WORK<br>TOGETHER
+    </h2>
   </div>
+
   <div class="contact-layout reveal">
+
+    <!-- LEFT SIDE -->
     <div class="contact-left">
       <h3>DROP US A LINE — WE DON'T BITE.</h3>
+
       <div class="contact-detail">
         <div class="c-icon">📍</div>
-        <div><div class="c-label">Address</div><div class="c-val">House 32, Road 12, Sector 10<br>Uttara, Dhaka-1230, Bangladesh</div></div>
+        <div>
+          <div class="c-label">Address</div>
+          <div class="c-val">House 32, Road 12, Sector 10<br>Uttara, Dhaka-1230, Bangladesh</div>
+        </div>
       </div>
+
       <div class="contact-detail">
         <div class="c-icon">🌐</div>
-        <div><div class="c-label">Website</div><div class="c-val">www.rangon.xyz</div></div>
+        <div>
+          <div class="c-label">Website</div>
+          <div class="c-val">www.rangon.xyz</div>
+        </div>
       </div>
+
       <div class="contact-detail">
         <div class="c-icon">✉️</div>
-        <div><div class="c-label">Email</div><div class="c-val">info@rangon.xyz</div></div>
+        <div>
+          <div class="c-label">Email</div>
+          <div class="c-val">info@rangon.xyz</div>
+        </div>
       </div>
+
       <div class="contact-detail">
         <div class="c-icon">🕐</div>
-        <div><div class="c-label">Working Hours</div><div class="c-val">Sun – Thu: 9:00 AM – 6:00 PM<br>Fri: 10:00 AM – 2:00 PM</div></div>
+        <div>
+          <div class="c-label">Working Hours</div>
+          <div class="c-val">Sun – Thu: 9:00 AM – 6:00 PM<br>Fri: 10:00 AM – 2:00 PM</div>
+        </div>
       </div>
     </div>
+
+    <!-- RIGHT SIDE -->
     <div class="contact-right">
-      <form onsubmit="handleSubmit(event)">
-        <form class="contact-form" action="https://formspree.io/f/xxxxabcd" method="POST">
-          <div class="field"><label>Your Name</label><input type="text" placeholder="Full name" required></div>
-          <div class="field"><label>Email Address</label><input type="email" placeholder="your@email.com" required></div>
+
+      <!-- SINGLE CLEAN FORMSPREE FORM -->
+      <form class="contact-form" action="https://formspree.io/f/xxxxabcd" method="POST">
+
+        <div class="field">
+          <label>Your Name</label>
+          <input type="text" name="name" placeholder="Full name" required>
         </div>
+
+        <div class="field">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="your@email.com" required>
+        </div>
+
         <div class="form-row">
-          <div class="field"><label>Company / Brand</label><input type="text" placeholder="Company name"></div>
-          <div class="field"><label>Service Needed</label>
-            <select>
+
+          <div class="field">
+            <label>Company / Brand</label>
+            <input type="text" name="company" placeholder="Company name">
+          </div>
+
+          <div class="field">
+            <label>Service Needed</label>
+            <select name="service">
               <option value="">Select a service...</option>
               <option>Brand Strategy & Identity</option>
               <option>Advertising Campaign</option>
@@ -922,14 +960,23 @@ footer { background:#040404; padding:5rem 5% 2.5rem; border-top:1px solid rgba(2
               <option>Full-Service Retainer</option>
             </select>
           </div>
+
         </div>
-        <div class="field"><label>Project Brief</label><textarea placeholder="Tell us about your brand, your goals, and what kind of campaign you have in mind..."></textarea></div>
+
+        <div class="field">
+          <label>Project Brief</label>
+          <textarea name="message" placeholder="Tell us about your brand, goals, and idea..."></textarea>
+        </div>
+
         <div class="form-submit">
           <button type="submit">Send Message →</button>
           <span class="form-note">We respond within 24 hours.</span>
         </div>
+
       </form>
+
     </div>
+
   </div>
 </section>
 
